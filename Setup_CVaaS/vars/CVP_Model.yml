@@ -1,6 +1,54 @@
 cvaas_configlets:
   Edge10-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
 
+  ATD-INFRA: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge11-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge12-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge13-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge14-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge20-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge21-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge22-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge23-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Edge24-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H11-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H12-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H13-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H14-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H21-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H22-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H23-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  H24-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  ISP-1-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  ISP-2-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  ISP-3-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Leaf11-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Leaf12-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Leaf21-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  Leaf22-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  P1-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  P2-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  P10-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  P11-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  P20-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  P21-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  PE1-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  PE2-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  PE11-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  PE12-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  PE21-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  PE22-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  R1-P11-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  R1-P12-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  R2-P31-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  R2-P32-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR1-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR2-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR3-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR4-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR5-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
+  RR6-BASE: "{{ lookup('file', '../configlets/Edge10-BASE.cfg') }}"
 
 # cvaas_containers:
 #   DC1:
@@ -19,8 +67,248 @@ cvaas_configlets:
 #     parentContainerName: DC2
 
 cvaas_devices:
+  - fqdn: ATD-INFRA
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'ATD-INFRA'
   - fqdn: Edge10-BASE
     parentContainerName: Tenant
     configlets:
-        - 'ATD-INFRA'
-        - 'Edge10-BASE'
+      - 'ATD-INFRA'
+      - 'Edge10-BASE'
+  - fqdn: Edge11-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge11-BASE'
+  - fqdn: Edge12-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge12-BASE'
+  - fqdn: Edge13-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge13-BASE'
+  - fqdn: Edge14-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge14-BASE'
+  - fqdn: Edge20-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge20-BASE'
+  - fqdn: Edge21-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge21-BASE'
+  - fqdn: Edge22-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge22-BASE'
+  - fqdn: Edge23-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge23-BASE'
+  - fqdn: Edge24-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Edge24-BASE'
+  - fqdn: H11-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H11-BASE'
+  - fqdn: H12-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H12-BASE'
+  - fqdn: H13-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H13-BASE'
+  - fqdn: H14-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H14-BASE'
+  - fqdn: H21-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H21-BASE'
+  - fqdn: H22-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H22-BASE'
+  - fqdn: H23-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H23-BASE'
+  - fqdn: H24-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'H24-BASE'
+  - fqdn: ISP-1-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'ISP-1-BASE'
+  - fqdn: ISP-2-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'ISP-2-BASE'
+  - fqdn: ISP-3-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'ISP-3-BASE'
+  - fqdn: Leaf11-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Leaf11-BASE'
+  - fqdn: Leaf12-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Leaf12-BASE'
+  - fqdn: Leaf21-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Leaf21-BASE'
+  - fqdn: Leaf22-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'Leaf22-BASE'
+  - fqdn: P1-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'P1-BASE'
+  - fqdn: P2-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'P2-BASE'
+  - fqdn: P10-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'P10-BASE'
+  - fqdn: P11-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'P11-BASE'
+  - fqdn: P20-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'P20-BASE'
+  - fqdn: P21-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'P21-BASE'
+  - fqdn: PE1-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'PE1-BASE'
+  - fqdn: PE2-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'PE2-BASE'
+  - fqdn: PE11-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'PE11-BASE'
+  - fqdn: PE12-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'PE12-BASE'
+  - fqdn: PE21-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'PE21-BASE'
+  - fqdn: PE22-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'PE22-BASE'
+  - fqdn: R1-P11-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'R1-P11-BASE'
+  - fqdn: R1-P12-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'R1-P12-BASE'
+  - fqdn: R2-P31-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'R2-P31-BASE'
+  - fqdn: R2-P32-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'R2-P32-BASE'
+  - fqdn: RR-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR-BASE'
+  - fqdn: RR1-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR1-BASE'
+  - fqdn: RR2-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR2-BASE'
+  - fqdn: RR3-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR3-BASE'
+  - fqdn: RR4-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR4-BASE'
+  - fqdn: RR5-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR5-BASE'
+  - fqdn: RR6-BASE
+    parentContainerName: Tenant
+    configlets:
+      - 'ATD-INFRA'
+      - 'RR6-BASE'
